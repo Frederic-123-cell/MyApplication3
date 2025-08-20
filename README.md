@@ -1,6 +1,6 @@
-# My Application - 多功能AI助手应用
+# 盲人辅助应用 - 多功能AI助手应用
 
-这是一个为视障用户设计的多功能AI助手应用，包含以下主要功能：
+这是一个专为视障用户设计的多功能AI助手应用，旨在提供更便捷的生活辅助。应用名为"盲人辅助应用"，包含物体识别、艺术品欣赏、图书阅读、语音控制和紧急求助等核心功能。
 
 ## 核心功能
 
@@ -50,41 +50,85 @@
 
 现在应用应该能够正常启动和运行，不再出现闪退或编译错误。
 
-1. **确保所有视图组件正确初始化**：
-   - 检查布局文件中的组件ID是否与代码中的ID匹配
-   - 确保在访问视图组件前调用setContentView()
+## 运行/部署指南
 
-2. **检查权限配置**：
-   - 确保AndroidManifest.xml中声明了所有必要的权限
-   - 检查运行时权限请求是否正确处理
+### 环境要求
+- Android Studio (推荐最新版本)
+- Android SDK API 34 (Android 14)
+- Java 17
+- 最低支持Android 5.0 (API 21)
 
-3. **验证依赖库配置**：
-   - 确保build.gradle.kts中添加了所有必要的依赖
-   - 检查libs.versions.toml中的版本配置是否正确
+### 导入项目
+1. 打开Android Studio
+2. 选择"Open an existing Android Studio project"
+3. 导航到项目目录并选择根文件夹
+4. 等待Gradle同步完成
 
-4. **检查Activity声明**：
-   - 确保AndroidManifest.xml中声明了所有Activity
-   - 检查Activity的intent-filter配置是否正确
+### 构建APK
+1. 在Android Studio中，选择菜单栏的 Build → Build Bundle(s) / APK(s) → Build APK(s)
+2. 等待构建完成
+3. 点击"locate"可查看生成的APK文件
 
+或者使用命令行构建:
+```bash
+# Windows
+gradlew assembleDebug
 
-## 语音识别
+# macOS/Linux
+./gradlew assembleDebug
+```
 
-应用使用Android系统内置的语音识别功能，适用于大多数Android设备。
+构建好的APK文件位置：
+```
+app/build/outputs/apk/debug/app-debug.apk
+```
 
-注意：之前曾尝试集成科大讯飞语音识别功能，但由于缺少必要的SDK文件导致构建错误，现已移除该功能。如果需要重新启用，请参考libs目录下的说明。
+### 安装应用
+1. 将生成的APK文件传输到Android设备
+2. 在设备上打开文件管理器，找到APK文件
+3. 点击APK文件开始安装
+4. 根据提示授予必要的权限
 
-## 集成指南
+## API密钥配置
 
-### 基础配置
-1. 确保所有API密钥已正确配置
-2. 检查网络权限和其他必要权限
+本应用需要配置以下API密钥才能正常使用相关功能：
 
-### 科大讯飞SDK集成步骤
-1. 从科大讯飞开放平台(https://www.xfyun.cn/)注册账号并创建应用
-2. 下载Android SDK
-3. 将Msc.jar文件放入app/libs目录
-4. 将.so文件放入src/main/jniLibs对应架构目录
-5. 在代码中替换IFLYTEK_APP_ID为您申请的APPID
+1. 通义千问VL API密钥（用于物体识别功能）
+2. 豆包AI API密钥（用于语音控制功能）
+
+在`local.properties`文件中添加以下配置：
+```properties
+dashscope.api.key=your_dashscope_api_key
+doubao.api.key=your_doubao_api_key
+```
+
+## 权限说明
+
+应用需要以下权限才能正常运行：
+- INTERNET：网络访问权限，用于API调用
+- CAMERA：相机权限，用于物体识别拍照
+- RECORD_AUDIO：录音权限，用于语音识别
+- CALL_PHONE：电话权限，用于紧急求助功能
+- ACCESS_FINE_LOCATION：精确定位权限，用于紧急求助发送位置
+- ACCESS_COARSE_LOCATION：粗略定位权限，用于紧急求助发送位置
+
+## 项目结构说明
+
+```
+app/
+├── src/main/java/              # Java源代码
+├── src/main/res/               # 资源文件
+├── src/main/AndroidManifest.xml # 应用配置文件
+├── build.gradle.kts           # 构建配置文件
+└── libs/                      # 第三方库文件
+```
+
+## 技术栈
+
+- Android SDK (API 34)
+- Java
+- Retrofit for API calls
+- Gson for JSON parsing
 
 ## 注意事项
 
@@ -93,18 +137,11 @@
 - 部分功能需要网络连接
 - 使用前请确保已授予必要的权限（相机、录音、存储等）
 
-## 技术栈
+## 可执行文件获取
 
-- Android SDK
-- Java
-- Retrofit for API calls
-- Gson for JSON parsing
-- OkHttp for HTTP requests
-- 声网(Agora)SDK for video calling（需要额外集成）
-- Google Generative AI SDK for AI features（需要额外集成）
-- 通义千问API
-- 豆包AI API
+应用的可执行APK文件位于仓库的Release区域，或者可以按照上述构建指南自行构建。
 
-# 项目已重置
-
-本项目已被清空，为重新开始做准备。
+构建好的APK文件位置：
+```
+app/build/outputs/apk/debug/app-debug.apk
+```
