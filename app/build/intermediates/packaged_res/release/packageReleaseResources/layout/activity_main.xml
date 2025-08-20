@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="盲人辅助应用"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/btn_object_recognition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="拍照识物"
+        android:textSize="18sp"
+        android:layout_marginBottom="20dp"
+        android:minHeight="60dp"/>
+
+    <Button
+        android:id="@+id/btn_book_reading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="典籍阅读"
+        android:textSize="18sp"
+        android:layout_marginBottom="20dp"
+        android:minHeight="60dp"/>
+
+    <Button
+        android:id="@+id/btn_art_appreciation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="艺术鉴赏"
+        android:textSize="18sp"
+        android:layout_marginBottom="20dp"
+        android:minHeight="60dp"/>
+        
+    <Button
+        android:id="@+id/btn_emergency"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="紧急求助"
+        android:textSize="18sp"
+        android:minHeight="60dp"/>
+
+</LinearLayout>

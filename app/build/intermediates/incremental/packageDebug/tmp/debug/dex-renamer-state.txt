@@ -1,0 +1,7 @@
+#Tue Aug 19 03:13:52 CST 2025
+base.0=E\:\\Users\\ALIENWARE\\AndroidStudioProjects\\MyApplication3\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+base.1=E\:\\Users\\ALIENWARE\\AndroidStudioProjects\\MyApplication3\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes2.dex
+path.0=classes.dex
+path.1=classes2.dex
+renamed.0=classes.dex
+renamed.1=classes2.dex

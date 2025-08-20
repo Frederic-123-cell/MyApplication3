@@ -1,0 +1,229 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.myapplication"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="34" />
+10
+11    <!-- 基本权限 -->
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->E:\Users\ALIENWARE\AndroidStudioProjects\MyApplication3\app\src\main\AndroidManifest.xml:6:5-67
+12-->E:\Users\ALIENWARE\AndroidStudioProjects\MyApplication3\app\src\main\AndroidManifest.xml:6:22-64
+13    <uses-permission android:name="android.permission.CAMERA" />
+13-->E:\Users\ALIENWARE\AndroidStudioProjects\MyApplication3\app\src\main\AndroidManifest.xml:7:5-65
+13-->E:\Users\ALIENWARE\AndroidStudioProjects\MyApplication3\app\src\main\AndroidManifest.xml:7:22-62
+14    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+14-->E:\Users\ALIENWARE\AndroidStudioProjects\MyApplication3\app\src\main\AndroidManifest.xml:8:5-71
+14-->E:\Users\ALIENWARE\AndroidStudioProjects\MyApplication3\app\src\main\AndroidManifest.xml:8:22-68
+15    <uses-permission android:name="android.permission.CALL_PHONE" />
+15-->E:\Users\ALIENWARE\AndroidStudioProjects\MyApplication3\app\src\main\AndroidManifest.xml:9:5-69
+15-->E:\Users\ALIENWARE\AndroidStudioProjects\MyApplication3\app\src\main\AndroidManifest.xml:9:22-66
+16    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+16-->E:\Users\ALIENWARE\AndroidStudioProjects\MyApplication3\app\src\main\AndroidManifest.xml:10:5-79
+16-->E:\Users\ALIENWARE\AndroidStudioProjects\MyApplication3\app\src\main\AndroidManifest.xml:10:22-76
+17    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+17-->E:\Users\ALIENWARE\AndroidStudioProjects\MyApplication3\app\src\main\AndroidManifest.xml:11:5-81
+17-->E:\Users\ALIENWARE\AndroidStudioProjects\MyApplication3\app\src\main\AndroidManifest.xml:11:22-78
+18
+19    <!-- 传感器权限 -->
+20    <uses-permission android:name="android.permission.BODY_SENSORS" />
+20-->E:\Users\ALIENWARE\AndroidStudioProjects\MyApplication3\app\src\main\AndroidManifest.xml:14:5-71
+20-->E:\Users\ALIENWARE\AndroidStudioProjects\MyApplication3\app\src\main\AndroidManifest.xml:14:22-68
+21
+22    <!-- 硬件特性 -->
+23    <uses-feature
+23-->E:\Users\ALIENWARE\AndroidStudioProjects\MyApplication3\app\src\main\AndroidManifest.xml:17:5-85
+24        android:name="android.hardware.camera"
+24-->E:\Users\ALIENWARE\AndroidStudioProjects\MyApplication3\app\src\main\AndroidManifest.xml:17:19-57
+25        android:required="false" />
+25-->E:\Users\ALIENWARE\AndroidStudioProjects\MyApplication3\app\src\main\AndroidManifest.xml:17:58-82
+26    <uses-feature
+26-->E:\Users\ALIENWARE\AndroidStudioProjects\MyApplication3\app\src\main\AndroidManifest.xml:18:5-88
+27        android:name="android.hardware.microphone"
+27-->E:\Users\ALIENWARE\AndroidStudioProjects\MyApplication3\app\src\main\AndroidManifest.xml:18:19-61
+28        android:required="true" />
+28-->E:\Users\ALIENWARE\AndroidStudioProjects\MyApplication3\app\src\main\AndroidManifest.xml:18:62-85
+29    <uses-feature
+29-->E:\Users\ALIENWARE\AndroidStudioProjects\MyApplication3\app\src\main\AndroidManifest.xml:19:5-99
+30        android:name="android.hardware.sensor.accelerometer"
+30-->E:\Users\ALIENWARE\AndroidStudioProjects\MyApplication3\app\src\main\AndroidManifest.xml:19:19-71
+31        android:required="false" />
+31-->E:\Users\ALIENWARE\AndroidStudioProjects\MyApplication3\app\src\main\AndroidManifest.xml:19:72-96
+32    <uses-feature
+32-->E:\Users\ALIENWARE\AndroidStudioProjects\MyApplication3\app\src\main\AndroidManifest.xml:20:5-93
+33        android:name="android.hardware.sensor.compass"
+33-->E:\Users\ALIENWARE\AndroidStudioProjects\MyApplication3\app\src\main\AndroidManifest.xml:20:19-65
+34        android:required="false" />
+34-->E:\Users\ALIENWARE\AndroidStudioProjects\MyApplication3\app\src\main\AndroidManifest.xml:20:66-90
+35    <uses-feature
+35-->E:\Users\ALIENWARE\AndroidStudioProjects\MyApplication3\app\src\main\AndroidManifest.xml:21:5-95
+36        android:name="android.hardware.sensor.barometer"
+36-->E:\Users\ALIENWARE\AndroidStudioProjects\MyApplication3\app\src\main\AndroidManifest.xml:21:19-67
+37        android:required="false" />
+37-->E:\Users\ALIENWARE\AndroidStudioProjects\MyApplication3\app\src\main\AndroidManifest.xml:21:68-92
+38    <uses-feature
+38-->E:\Users\ALIENWARE\AndroidStudioProjects\MyApplication3\app\src\main\AndroidManifest.xml:22:5-95
+39        android:name="android.hardware.sensor.gyroscope"
+39-->E:\Users\ALIENWARE\AndroidStudioProjects\MyApplication3\app\src\main\AndroidManifest.xml:22:19-67
+40        android:required="false" />
+40-->E:\Users\ALIENWARE\AndroidStudioProjects\MyApplication3\app\src\main\AndroidManifest.xml:22:68-92
+41    <uses-feature
+41-->E:\Users\ALIENWARE\AndroidStudioProjects\MyApplication3\app\src\main\AndroidManifest.xml:23:5-88
+42        android:name="android.hardware.telephony"
+42-->E:\Users\ALIENWARE\AndroidStudioProjects\MyApplication3\app\src\main\AndroidManifest.xml:23:19-60
+43        android:required="false" />
+43-->E:\Users\ALIENWARE\AndroidStudioProjects\MyApplication3\app\src\main\AndroidManifest.xml:23:61-85
+44
+45    <permission
+45-->[androidx.core:core:1.12.0] C:\Users\ALIENWARE\.gradle\caches\transforms-4\a5827551a1fa662d9a0f23477376f01e\transformed\core-1.12.0\AndroidManifest.xml:22:5-24:47
+46        android:name="com.example.myapplication.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+46-->[androidx.core:core:1.12.0] C:\Users\ALIENWARE\.gradle\caches\transforms-4\a5827551a1fa662d9a0f23477376f01e\transformed\core-1.12.0\AndroidManifest.xml:23:9-81
+47        android:protectionLevel="signature" />
+47-->[androidx.core:core:1.12.0] C:\Users\ALIENWARE\.gradle\caches\transforms-4\a5827551a1fa662d9a0f23477376f01e\transformed\core-1.12.0\AndroidManifest.xml:24:9-44
+48
+49    <uses-permission android:name="com.example.myapplication.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+49-->[androidx.core:core:1.12.0] C:\Users\ALIENWARE\.gradle\caches\transforms-4\a5827551a1fa662d9a0f23477376f01e\transformed\core-1.12.0\AndroidManifest.xml:26:5-97
+49-->[androidx.core:core:1.12.0] C:\Users\ALIENWARE\.gradle\caches\transforms-4\a5827551a1fa662d9a0f23477376f01e\transformed\core-1.12.0\AndroidManifest.xml:26:22-94
+50
+51    <application
+51-->E:\Users\ALIENWARE\AndroidStudioProjects\MyApplication3\app\src\main\AndroidManifest.xml:25:5-65:19
+52        android:allowBackup="true"
+52-->E:\Users\ALIENWARE\AndroidStudioProjects\MyApplication3\app\src\main\AndroidManifest.xml:26:9-35
+53        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+53-->[androidx.core:core:1.12.0] C:\Users\ALIENWARE\.gradle\caches\transforms-4\a5827551a1fa662d9a0f23477376f01e\transformed\core-1.12.0\AndroidManifest.xml:28:18-86
+54        android:dataExtractionRules="@xml/data_extraction_rules"
+54-->E:\Users\ALIENWARE\AndroidStudioProjects\MyApplication3\app\src\main\AndroidManifest.xml:27:9-65
+55        android:extractNativeLibs="true"
+56        android:fullBackupContent="@xml/backup_rules"
+56-->E:\Users\ALIENWARE\AndroidStudioProjects\MyApplication3\app\src\main\AndroidManifest.xml:28:9-54
+57        android:icon="@mipmap/ic_launcher"
+57-->E:\Users\ALIENWARE\AndroidStudioProjects\MyApplication3\app\src\main\AndroidManifest.xml:29:9-43
+58        android:label="@string/app_name"
+58-->E:\Users\ALIENWARE\AndroidStudioProjects\MyApplication3\app\src\main\AndroidManifest.xml:30:9-41
+59        android:roundIcon="@mipmap/ic_launcher_round"
+59-->E:\Users\ALIENWARE\AndroidStudioProjects\MyApplication3\app\src\main\AndroidManifest.xml:31:9-54
+60        android:supportsRtl="true"
+60-->E:\Users\ALIENWARE\AndroidStudioProjects\MyApplication3\app\src\main\AndroidManifest.xml:32:9-35
+61        android:theme="@style/Theme.MyApplication"
+61-->E:\Users\ALIENWARE\AndroidStudioProjects\MyApplication3\app\src\main\AndroidManifest.xml:33:9-51
+62        android:usesCleartextTraffic="true" >
+62-->E:\Users\ALIENWARE\AndroidStudioProjects\MyApplication3\app\src\main\AndroidManifest.xml:34:9-44
+63        <activity
+63-->E:\Users\ALIENWARE\AndroidStudioProjects\MyApplication3\app\src\main\AndroidManifest.xml:37:9-44:20
+64            android:name="com.example.myapplication.MainActivity"
+64-->E:\Users\ALIENWARE\AndroidStudioProjects\MyApplication3\app\src\main\AndroidManifest.xml:38:13-41
+65            android:exported="true" >
+65-->E:\Users\ALIENWARE\AndroidStudioProjects\MyApplication3\app\src\main\AndroidManifest.xml:39:13-36
+66            <intent-filter>
+66-->E:\Users\ALIENWARE\AndroidStudioProjects\MyApplication3\app\src\main\AndroidManifest.xml:40:13-43:29
+67                <action android:name="android.intent.action.MAIN" />
+67-->E:\Users\ALIENWARE\AndroidStudioProjects\MyApplication3\app\src\main\AndroidManifest.xml:41:17-69
+67-->E:\Users\ALIENWARE\AndroidStudioProjects\MyApplication3\app\src\main\AndroidManifest.xml:41:25-66
+68
+69                <category android:name="android.intent.category.LAUNCHER" />
+69-->E:\Users\ALIENWARE\AndroidStudioProjects\MyApplication3\app\src\main\AndroidManifest.xml:42:17-77
+69-->E:\Users\ALIENWARE\AndroidStudioProjects\MyApplication3\app\src\main\AndroidManifest.xml:42:27-74
+70            </intent-filter>
+71        </activity>
+72        <activity
+72-->E:\Users\ALIENWARE\AndroidStudioProjects\MyApplication3\app\src\main\AndroidManifest.xml:46:9-48:39
+73            android:name="com.example.myapplication.ObjectRecognitionActivity"
+73-->E:\Users\ALIENWARE\AndroidStudioProjects\MyApplication3\app\src\main\AndroidManifest.xml:47:13-54
+74            android:exported="true" />
+74-->E:\Users\ALIENWARE\AndroidStudioProjects\MyApplication3\app\src\main\AndroidManifest.xml:48:13-36
+75        <activity
+75-->E:\Users\ALIENWARE\AndroidStudioProjects\MyApplication3\app\src\main\AndroidManifest.xml:50:9-52:39
+76            android:name="com.example.myapplication.ArtAppreciationActivity"
+76-->E:\Users\ALIENWARE\AndroidStudioProjects\MyApplication3\app\src\main\AndroidManifest.xml:51:13-52
+77            android:exported="true" />
+77-->E:\Users\ALIENWARE\AndroidStudioProjects\MyApplication3\app\src\main\AndroidManifest.xml:52:13-36
+78        <activity
+78-->E:\Users\ALIENWARE\AndroidStudioProjects\MyApplication3\app\src\main\AndroidManifest.xml:54:9-56:39
+79            android:name="com.example.myapplication.BookReadingActivity"
+79-->E:\Users\ALIENWARE\AndroidStudioProjects\MyApplication3\app\src\main\AndroidManifest.xml:55:13-48
+80            android:exported="true" />
+80-->E:\Users\ALIENWARE\AndroidStudioProjects\MyApplication3\app\src\main\AndroidManifest.xml:56:13-36
+81        <activity
+81-->E:\Users\ALIENWARE\AndroidStudioProjects\MyApplication3\app\src\main\AndroidManifest.xml:58:9-60:39
+82            android:name="com.example.myapplication.EmergencyActivity"
+82-->E:\Users\ALIENWARE\AndroidStudioProjects\MyApplication3\app\src\main\AndroidManifest.xml:59:13-46
+83            android:exported="true" />
+83-->E:\Users\ALIENWARE\AndroidStudioProjects\MyApplication3\app\src\main\AndroidManifest.xml:60:13-36
+84        <activity
+84-->E:\Users\ALIENWARE\AndroidStudioProjects\MyApplication3\app\src\main\AndroidManifest.xml:62:9-64:39
+85            android:name="com.example.myapplication.VoiceControlActivity"
+85-->E:\Users\ALIENWARE\AndroidStudioProjects\MyApplication3\app\src\main\AndroidManifest.xml:63:13-49
+86            android:exported="true" />
+86-->E:\Users\ALIENWARE\AndroidStudioProjects\MyApplication3\app\src\main\AndroidManifest.xml:64:13-36
+87
+88        <provider
+88-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ALIENWARE\.gradle\caches\transforms-4\1d0abec4564e3c48f7fcbc12c1f26219\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+89            android:name="androidx.startup.InitializationProvider"
+89-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ALIENWARE\.gradle\caches\transforms-4\1d0abec4564e3c48f7fcbc12c1f26219\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+90            android:authorities="com.example.myapplication.androidx-startup"
+90-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ALIENWARE\.gradle\caches\transforms-4\1d0abec4564e3c48f7fcbc12c1f26219\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+91            android:exported="false" >
+91-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ALIENWARE\.gradle\caches\transforms-4\1d0abec4564e3c48f7fcbc12c1f26219\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+92            <meta-data
+92-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ALIENWARE\.gradle\caches\transforms-4\1d0abec4564e3c48f7fcbc12c1f26219\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+93                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+93-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ALIENWARE\.gradle\caches\transforms-4\1d0abec4564e3c48f7fcbc12c1f26219\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+94                android:value="androidx.startup" />
+94-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ALIENWARE\.gradle\caches\transforms-4\1d0abec4564e3c48f7fcbc12c1f26219\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+95            <meta-data
+95-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\ALIENWARE\.gradle\caches\transforms-4\759d7dc67d02deae02745f7e46f376cb\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
+96                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+96-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\ALIENWARE\.gradle\caches\transforms-4\759d7dc67d02deae02745f7e46f376cb\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
+97                android:value="androidx.startup" />
+97-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\ALIENWARE\.gradle\caches\transforms-4\759d7dc67d02deae02745f7e46f376cb\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
+98            <meta-data
+98-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ALIENWARE\.gradle\caches\transforms-4\03e6776d3ddfdaedb0ea963e1596712f\transformed\profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
+99                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+99-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ALIENWARE\.gradle\caches\transforms-4\03e6776d3ddfdaedb0ea963e1596712f\transformed\profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
+100                android:value="androidx.startup" />
+100-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ALIENWARE\.gradle\caches\transforms-4\03e6776d3ddfdaedb0ea963e1596712f\transformed\profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
+101        </provider>
+102
+103        <receiver
+103-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ALIENWARE\.gradle\caches\transforms-4\03e6776d3ddfdaedb0ea963e1596712f\transformed\profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
+104            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+104-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ALIENWARE\.gradle\caches\transforms-4\03e6776d3ddfdaedb0ea963e1596712f\transformed\profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
+105            android:directBootAware="false"
+105-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ALIENWARE\.gradle\caches\transforms-4\03e6776d3ddfdaedb0ea963e1596712f\transformed\profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
+106            android:enabled="true"
+106-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ALIENWARE\.gradle\caches\transforms-4\03e6776d3ddfdaedb0ea963e1596712f\transformed\profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
+107            android:exported="true"
+107-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ALIENWARE\.gradle\caches\transforms-4\03e6776d3ddfdaedb0ea963e1596712f\transformed\profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
+108            android:permission="android.permission.DUMP" >
+108-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ALIENWARE\.gradle\caches\transforms-4\03e6776d3ddfdaedb0ea963e1596712f\transformed\profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
+109            <intent-filter>
+109-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ALIENWARE\.gradle\caches\transforms-4\03e6776d3ddfdaedb0ea963e1596712f\transformed\profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
+110                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+110-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ALIENWARE\.gradle\caches\transforms-4\03e6776d3ddfdaedb0ea963e1596712f\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
+110-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ALIENWARE\.gradle\caches\transforms-4\03e6776d3ddfdaedb0ea963e1596712f\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
+111            </intent-filter>
+112            <intent-filter>
+112-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ALIENWARE\.gradle\caches\transforms-4\03e6776d3ddfdaedb0ea963e1596712f\transformed\profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
+113                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+113-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ALIENWARE\.gradle\caches\transforms-4\03e6776d3ddfdaedb0ea963e1596712f\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
+113-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ALIENWARE\.gradle\caches\transforms-4\03e6776d3ddfdaedb0ea963e1596712f\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
+114            </intent-filter>
+115            <intent-filter>
+115-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ALIENWARE\.gradle\caches\transforms-4\03e6776d3ddfdaedb0ea963e1596712f\transformed\profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
+116                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+116-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ALIENWARE\.gradle\caches\transforms-4\03e6776d3ddfdaedb0ea963e1596712f\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
+116-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ALIENWARE\.gradle\caches\transforms-4\03e6776d3ddfdaedb0ea963e1596712f\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
+117            </intent-filter>
+118            <intent-filter>
+118-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ALIENWARE\.gradle\caches\transforms-4\03e6776d3ddfdaedb0ea963e1596712f\transformed\profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
+119                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+119-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ALIENWARE\.gradle\caches\transforms-4\03e6776d3ddfdaedb0ea963e1596712f\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
+119-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ALIENWARE\.gradle\caches\transforms-4\03e6776d3ddfdaedb0ea963e1596712f\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
+120            </intent-filter>
+121        </receiver>
+122    </application>
+123
+124</manifest>

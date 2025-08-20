@@ -1,0 +1,126 @@
+[
+    {
+        "merged": "com.example.myapplication.app-release-35:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.myapplication.app-main-36:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.myapplication.app-release-35:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.example.myapplication.app-main-36:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-release-35:/drawable_ic_ai.xml.flat",
+        "source": "com.example.myapplication.app-main-36:/drawable/ic_ai.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-release-35:/layout_activity_book_reading.xml.flat",
+        "source": "com.example.myapplication.app-main-36:/layout/activity_book_reading.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-release-35:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.example.myapplication.app-main-36:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-release-35:/xml_data_extraction_rules.xml.flat",
+        "source": "com.example.myapplication.app-main-36:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-release-35:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.example.myapplication.app-main-36:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.myapplication.app-release-35:/layout_activity_main.xml.flat",
+        "source": "com.example.myapplication.app-main-36:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-release-35:/drawable_ic_videocam_off.xml.flat",
+        "source": "com.example.myapplication.app-main-36:/drawable/ic_videocam_off.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-release-35:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.example.myapplication.app-main-36:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-release-35:/layout_activity_object_recognition.xml.flat",
+        "source": "com.example.myapplication.app-main-36:/layout/activity_object_recognition.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-release-35:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.myapplication.app-main-36:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.myapplication.app-release-35:/drawable_rounded_button_red.xml.flat",
+        "source": "com.example.myapplication.app-main-36:/drawable/rounded_button_red.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-release-35:/xml_backup_rules.xml.flat",
+        "source": "com.example.myapplication.app-main-36:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-release-35:/drawable_rounded_button.xml.flat",
+        "source": "com.example.myapplication.app-main-36:/drawable/rounded_button.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-release-35:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.myapplication.app-main-36:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.myapplication.app-release-35:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.example.myapplication.app-main-36:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.myapplication.app-release-35:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.myapplication.app-main-36:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.myapplication.app-release-35:/layout_activity_emergency.xml.flat",
+        "source": "com.example.myapplication.app-main-36:/layout/activity_emergency.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-release-35:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.example.myapplication.app-main-36:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.myapplication.app-release-35:/drawable_ic_call_end.xml.flat",
+        "source": "com.example.myapplication.app-main-36:/drawable/ic_call_end.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-release-35:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.myapplication.app-main-36:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.myapplication.app-release-35:/layout_activity_art_appreciation.xml.flat",
+        "source": "com.example.myapplication.app-main-36:/layout/activity_art_appreciation.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-release-35:/drawable_ic_videocam_on.xml.flat",
+        "source": "com.example.myapplication.app-main-36:/drawable/ic_videocam_on.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-release-35:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.myapplication.app-main-36:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.myapplication.app-release-35:/xml_network_security_config.xml.flat",
+        "source": "com.example.myapplication.app-main-36:/xml/network_security_config.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-release-35:/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "com.example.myapplication.app-pngs-31:/drawable-anydpi-v24/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-release-35:/drawable_ic_mic_on.xml.flat",
+        "source": "com.example.myapplication.app-main-36:/drawable/ic_mic_on.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-release-35:/drawable_ic_mic_off.xml.flat",
+        "source": "com.example.myapplication.app-main-36:/drawable/ic_mic_off.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-release-35:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.myapplication.app-main-36:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.myapplication.app-release-35:/layout_activity_voice_control.xml.flat",
+        "source": "com.example.myapplication.app-main-36:/layout/activity_voice_control.xml"
+    }
+]
