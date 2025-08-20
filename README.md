@@ -19,18 +19,12 @@
 - 语音播报功能
 
 ### 4. 图书阅读 (BookReadingActivity)
-- 文本阅读功能
-- 文本转语音(TTS)朗读
-- 自动翻页功能
+-接入网站
 
-### 5. 语音控制 (VoiceControlActivity)
-- 语音识别和语音合成
-- 集成豆包AI进行对话
-- 使用Android系统内置语音识别
 
-### 6. 紧急求助 (EmergencyActivity)
+### 5. 紧急求助 (EmergencyActivity)
 - 快速拨打紧急电话
-- 发送位置信息给紧急联系人
+- 摔倒检测
 - 语音报警功能
 
 ## 解决应用闪退和编译错误问题
@@ -65,6 +59,8 @@
 4. 等待Gradle同步完成
 
 ### 构建APK
+文件里已有现成的.apk文件如果不成功请继续下列操作
+-----------------------------------------------------------------------------------------------------------
 1. 在Android Studio中，选择菜单栏的 Build → Build Bundle(s) / APK(s) → Build APK(s)
 2. 等待构建完成
 3. 点击"locate"可查看生成的APK文件
@@ -94,12 +90,12 @@ app/build/outputs/apk/debug/app-debug.apk
 本应用需要配置以下API密钥才能正常使用相关功能：
 
 1. 通义千问VL API密钥（用于物体识别功能）
-2. 豆包AI API密钥（用于语音控制功能）
+
 
 在`local.properties`文件中添加以下配置：
 ```properties
 dashscope.api.key=your_dashscope_api_key
-doubao.api.key=your_doubao_api_key
+
 ```
 
 ## 权限说明
@@ -111,7 +107,7 @@ doubao.api.key=your_doubao_api_key
 - CALL_PHONE：电话权限，用于紧急求助功能
 - ACCESS_FINE_LOCATION：精确定位权限，用于紧急求助发送位置
 - ACCESS_COARSE_LOCATION：粗略定位权限，用于紧急求助发送位置
-
+- 需要访问设备的陀螺仪，指南针，海拔气压针，水平仪，运动与健康等
 ## 项目结构说明
 
 ```
